@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod Recommendations - My Project</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="download.html">Download</a></li>
+                <li><a href="mod-recommendations.html">Mod Recommendations</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="recommendations-form">
+        <h1>Submit Your Mod Recommendation</h1>
+        <form id="recommendation-form">
+            <input type="text" id="mod-name" placeholder="Mod Name" required />
+            <textarea id="mod-description" placeholder="Mod Description" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="recommendations-list">
+        <h2>Community Mod Recommendations</h2>
+        <ul id="recommendations-list"></ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Project</p>
+    </footer>
+
+    <script src="submit-recommendation.js"></script>
+</body>
+</html>

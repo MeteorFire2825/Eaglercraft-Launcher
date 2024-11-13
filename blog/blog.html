@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eaglercraft Launcher - Blog</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="firebase-config.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="download.html">Download</a></li>
+                <li><a href="mod-recommendations.html">Mods</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="blog-container">
+        <h1>Eaglercraft Launcher Blog</h1>
+
+        <!-- Blog Posts Section -->
+        <div id="blog-posts">
+            <h2>Recent Posts</h2>
+            <div id="posts-list"></div>
+        </div>
+
+        <!-- Login Prompt if Not Logged In -->
+        <div id="login-prompt" style="display:none;">
+            <p>Please <a href="login.html">log in</a> to submit a blog post.</p>
+        </div>
+
+        <!-- New Post Form (visible only for logged-in users) -->
+        <div id="new-post-form" style="display:none;">
+            <h2>Submit a New Post</h2>
+            <form id="post-form">
+                <input type="text" id="post-title" placeholder="Post Title" required />
+                <textarea id="post-content" placeholder="Post Content" required></textarea>
+                <button type="submit">Submit Post</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Eaglercraft Launcher</p>
+    </footer>
+
+    <script src="blog.js"></script>
+</body>
+</html>
